@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanami Hour Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Hanami Hour Cafe</h1>
+<p id="open-status"></p>
+
+<button type="button" id="theme-button">
+    Toggle Light/Dark Mode
+</button>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#visit">Visit</a>
+            <a href="#reserve">Reserve</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home">
+            <h2>A Little Softness in Your Day</h2>
+            <p>Enjoy fresh matcha, coffee and delicious pastries in a peaceful atmosphere.</p>
+
+            <a href="#menu">View Our Menu</a>
+
+            <br><br>
+
+            <img src="hanami-hero.png" alt="Matcha and croissant" width="400">
+        </section>
+
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <p>Fresh drinks and pastries made with care.</p>
+
+            <div>
+    <button type="button" class="filter-button" data-category="all">All</button>
+    <button type="button" class="filter-button" data-category="drinks">Drinks</button>
+    <button type="button" class="filter-button" data-category="pastries">Pastries</button>
+</div>
+
+<table id="menu-table" border="1">
+    <tr>
+        <th>Item</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Order</th>
+    </tr>
+    <tr data-category="drinks">
+        <td>Cloud Matcha</td>
+        <td>Drinks</td>
+        <td>690</td>
+        <td><input type="checkbox" class="order-item" value="690"> Add</td>
+    </tr>
+    <tr data-category="pastries">
+        <td>Blush Croissant</td>
+        <td>Pastries</td>
+        <td>540</td>
+        <td><input type="checkbox" class="order-item" value="540"> Add</td>
+    </tr>
+    <tr data-category="drinks">
+        <td>Rosewood Latte</td>
+        <td>Drinks</td>
+        <td>590</td>
+        <td><input type="checkbox" class="order-item" value="590"> Add</td>
+    </tr>
+    <tr data-category="pastries">
+        <td>Butter Cookie</td>
+        <td>Pastries</td>
+        <td>250</td>
+        <td><input type="checkbox" class="order-item" value="250"> Add</td>
+    </tr>
+</table>
+
+<p id="total">Total: Rs. 0</p>
+
+            <div>
+                <h3>Cloud Matcha</h3>
+                <img src="IcedMatcha.jpg" alt="Iced matcha" width="200">
+                <p>Green tea with vanilla cream.</p>
+                <strong>Rs. 690</strong>
+            </div>
+
+            <div>
+                <h3>Blush Croissant</h3>
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff" alt="Fresh croissant" width="200">
+                <p>Fresh butter croissant with raspberry jam.</p>
+                <strong>Rs. 540</strong>
+            </div>
+
+            <div>
+                <h3>Rosewood Latte</h3>
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="Coffee latte" width="200">
+                <p>Espresso with your choice of milk.</p>
+                <strong>Rs. 590</strong>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>Our Ritual</h2>
+            <p>We want every visitor to enjoy a calm and comfortable moment.</p>
+
+            <article>
+    <p>
+        Hanami Hour Cafe is a cozy place for coffee, matcha and fresh pastries.
+        We want every visitor to enjoy a peaceful break from a busy day.
+    </p>
+
+    <p id="extra-story" style="display: none;">
+        Our cafe is inspired by spring blossoms, soft colors and the simple
+        joy of sharing a drink with friends.
+    </p>
+
+    <button type="button" id="read-more-button">Read More</button>
+</article>
+
+            <ol type="A">
+                <li>Choose your favourite drink.</li>
+                <li>Take a comfortable seat.</li>
+                <li>Enjoy your moment.</li>
+            </ol>
+        </section>
+
+        <section id="visit">
+            <h2>Visit Us</h2>
+
+            <p>
+                18B, Sunset Boulevard<br>
+                DHA Phase 6, Islamabad
+            </p>
+
+            <h3>Opening Hours</h3>
+
+            <table border="1">
+                <tr>
+                    <th>Day</th>
+                    <th>Opening Hours</th>
+                </tr>
+                <tr>
+                    <td>Monday - Friday</td>
+                    <td>8 AM - 9 PM</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>9 AM - 10 PM</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>9 AM - 8 PM</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="reserve">
+            <h2>Reserve a Table</h2>
+
+            <form id="feedback-form">
+                <label>Name:</label>
+                <input type="text" id="username" name="name" required>
+
+                <br><br>
+
+                <label>Email:</label>
+               <input type="email" id="email" name="email" required>
+                <br><br>
+
+<label>Birth Year:</label>
+<input type="text" id="birth-year" name="birth-year">
+
+<br><br>
+
+<label>Special Requests:</label>
+<br>
+<textarea id="special-notes" maxlength="100"></textarea>
+
+<p id="character-count">100 characters remaining</p>
+
+                <label>Visit Type:</label>
+
+                <br>
+
+                <input type="radio" name="visit" value="solo">
+                Solo Date
+
+                <br>
+
+                <input type="radio" name="visit" value="catchup">
+                Soft Catch-up
+
+                <br>
+
+                <input type="radio" name="visit" value="celebration">
+                Small Celebration
+
+                <br><br>
+
+                <input type="checkbox" name="newsletter">
+                Send me cafe updates.
+
+                <br><br>
+
+                <button type="submit">Reserve Table</button>
+                <p id="form-message"></p>
+<p id="discount-message"></p>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <h3>Hanami Hour Cafe</h3>
+        <p>Matcha, coffee and pastries with a soft spot for spring.</p>
+        <a href="#home">Back to Top</a>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

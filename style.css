@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #fff9df;
+    color: #4b3b5a;
+}
+
+header {
+    background-color: #c9b6e4;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #5b3a82;
+}
+
+h2 {
+    color: #6f4b8b;
+}
+
+nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: #5b3a82;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d46a8c;
+}
+
+section {
+    padding: 40px;
+}
+
+#home {
+    background-color: #fff1a8;
+    text-align: center;
+}
+
+#menu {
+    background-color: #f8e8ff;
+    text-align: center;
+}
+
+#menu div {
+    display: inline-block;
+    width: 28%;
+    margin: 10px;
+    padding: 15px;
+    background-color: #fffdf5;
+    border: 2px solid #d8c2ed;
+    border-radius: 10px;
+}
+
+#menu img {
+    width: 180px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#about {
+    background-color: #ffe0e8;
+}
+
+#visit {
+    background-color: #e9dcff;
+}
+
+#reserve {
+    background-color: #fff1a8;
+}
+
+img {
+    border-radius: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th {
+    background-color: #c9b6e4;
+}
+
+th, td {
+    padding: 10px;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #b99ad6;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #9b70c4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #d46a8c;
+}
+
+footer {
+    background-color: #c9b6e4;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #5b3a82;
+}
+
+.dark-mode {
+    background-color: #292333;
+    color: #fff1c1;
+}
+
+.dark-mode header,
+.dark-mode footer {
+    background-color: #48385c;
+}
+
+.dark-mode section {
+    background-color: #332b40;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode nav a,
+.dark-mode footer a {
+    color: #f5df9b;
+}
+
+.dark-mode #menu div,
+.dark-mode table {
+    background-color: #48385c;
+    color: white;
+}
+
+.dark-mode th {
+    background-color: #6b5287;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+    background-color: #f8f0ff;
+    color: #292333;
+}
+
+#special-notes {
+    width: 250px;
+    height: 70px;
+}
+
+/* Keep every section and its contents readable when the body is in dark mode.
+   The section IDs above are more specific than the generic dark-mode rule. */
+.dark-mode #home,
+.dark-mode #menu,
+.dark-mode #about,
+.dark-mode #visit,
+.dark-mode #reserve {
+    background-color: #332b40;
+    color: #f3edf8;
+}
+
+.dark-mode #home h2,
+.dark-mode #menu h2,
+.dark-mode #about h2,
+.dark-mode #visit h2,
+.dark-mode #reserve h2,
+.dark-mode #menu h3,
+.dark-mode #about h3,
+.dark-mode #visit h3 {
+    color: #f5df9b;
+}
+
+.dark-mode #menu div {
+    background-color: #48385c;
+    color: #ffffff;
+    border-color: #806a99;
+}
+
+.dark-mode #menu table {
+    background-color: #48385c;
+    color: #ffffff;
+}
+
+.dark-mode #menu th {
+    background-color: #6b5287;
+    color: #ffffff;
+}
+
+.dark-mode #menu td {
+    color: #ffffff;
+}
+
+.dark-mode #open-status {
+    font-weight: bold;
+}
